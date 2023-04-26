@@ -7,6 +7,7 @@ chrony:
     - user: root
     - group: root
     - mode: '0644'
+    - template: jinja
 
 chronyd.service:
   service.running:
