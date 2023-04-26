@@ -3,7 +3,7 @@ chrony:
 
 /etc/chrony.conf:
   file.managed:
-    - source: salt://init/chrony/files/chrony.conf
+    - source: salt://init/chrony/files/chrony.conf.j2
     - user: root
     - group: root
     - mode: '0644'
