@@ -7,7 +7,7 @@ salt-minion:
     - user: root
     - group: root
     - mode: '0644'
-#    - template: jinja
+    - template: jinja
 
 salt-minion.service:
   service.running:
