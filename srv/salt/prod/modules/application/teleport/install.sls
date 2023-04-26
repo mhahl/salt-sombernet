@@ -12,7 +12,7 @@ teleport_configuration:
 
       # Teleport configuration
       - /etc/teleport.yaml:
-        - source: salt://modules/applicatio/teleport/files/teleport.yaml.j2
+        - source: salt://modules/application/teleport/files/teleport.yaml.j2
 
 teleport_packages:
   pkg.installed:
