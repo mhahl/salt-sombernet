@@ -2,3 +2,4 @@ base:
   '*':
      - minion
      - chrony
+     - dns

@@ -1,0 +1,7 @@
+search {{pillar['dns_search'] | join(' ') }}
+
+{% for server in pillar['dns_servers'] %}
+nameserver {{server}}
+{%endfor%}
+
+options timeout:5
