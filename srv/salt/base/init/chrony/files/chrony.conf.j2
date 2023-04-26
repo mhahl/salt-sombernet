@@ -33,7 +33,7 @@ leapsectz right/UTC
 # Specify directory for log files.
 logdir /var/log/chrony
 
-{%for server in ntp_servers %}
+{%for server in pillar['ntp_servers'] %}
 server {{server}} iburst
 {%endfor%}
 
