@@ -1,7 +1,7 @@
-salt-minion:
+py29-salt:
   pkg.installed
 
-/etc/salt/minion:
+/usr/local/etc/salt/minion:
   file.managed:
     - source: salt://init/minion/files/minion.j2 
     - user: root
@@ -9,6 +9,6 @@ salt-minion:
     - mode: '0644'
     - template: jinja
 
-salt-minion.service:
+salt_minion:
   service.running:
       - enable: true

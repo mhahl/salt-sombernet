@@ -1,6 +1,3 @@
-ntpd:
-  pkg.installed
-
 /etc/ntp.conf:
   file.managed:
     - source: salt://init/ntp/files/ntp.conf.j2
@@ -9,6 +6,6 @@ ntpd:
     - mode: '0644'
     - template: jinja
 
-ntpd.service:
+ntpd:
   service.running:
     - enable: true
