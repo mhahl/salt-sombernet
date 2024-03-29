@@ -1,4 +1,4 @@
-py29-salt:
+py39-salt:
   pkg.installed
 
 /usr/local/etc/salt/minion:

@@ -2,7 +2,7 @@
   file.managed:
     - source: salt://init/ntp/files/ntp.conf.j2
     - user: root
-    - group: root
+    - group: wheel
     - mode: '0644'
     - template: jinja
 
