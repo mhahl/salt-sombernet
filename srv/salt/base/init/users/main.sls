@@ -4,7 +4,7 @@ mhahl:
     - shell: /bin/sh
     - home: /home/mhahl
     - groups:
-      - wheel
+      - mhahl
 
   ssh_auth.present:
     - user: mhahl
