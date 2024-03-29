@@ -1,5 +1,5 @@
 sudo:
-  pkg.installed
+  pkg.installed:
 
   group.present:
     - system: True
