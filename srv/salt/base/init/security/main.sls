@@ -3,5 +3,5 @@
     - source:
       - salt://init/security/files/99-security.sh
     - user: root
-    - group: root
+    - group: wheel
     - mode: 755

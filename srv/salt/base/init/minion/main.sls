@@ -5,7 +5,7 @@ py29-salt:
   file.managed:
     - source: salt://init/minion/files/minion.j2 
     - user: root
-    - group: root
+    - group: wheel
     - mode: '0644'
     - template: jinja
 
