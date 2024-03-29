@@ -1,5 +1,5 @@
 base:
   '*':
      - minion
-     - chrony
+     - ntp
      - dns
