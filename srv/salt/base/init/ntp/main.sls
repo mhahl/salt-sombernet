@@ -1,7 +1,7 @@
-chrony:
+ntpd:
   pkg.installed
 
-/etc/chrony.conf:
+/etc/ntp.conf:
   file.managed:
     - source: salt://init/ntp/files/ntp.conf.j2
     - user: root
@@ -9,6 +9,6 @@ chrony:
     - mode: '0644'
     - template: jinja
 
-chronyd.service:
+ntpd.service:
   service.running:
     - enable: true
