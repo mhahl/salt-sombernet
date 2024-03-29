@@ -3,4 +3,4 @@ include:
   - init.minion.main
   - init.ntp.main
   - init.security.main
-  - init.users
+  - init.users.main
