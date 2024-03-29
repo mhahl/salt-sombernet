@@ -1,1 +1,1 @@
-master: teleport.sombernet.au
+master: int-lb-01.syd.sigaint.au

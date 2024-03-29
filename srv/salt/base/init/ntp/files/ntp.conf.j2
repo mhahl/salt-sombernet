@@ -1,0 +1,22 @@
+# NTP servers to use
+{%for server in pillar['ntp_servers'] %}
+server {{server}}
+{%endfor%}
+
+# Access restrictions
+# https://support.ntp.org/bin/view/Support/AccessRestrictions
+restrict default limited kod nomodify notrap nopeer noquery
+restrict -6 default limited kod nomodify notrap nopeer noquery
+restrict 127.0.0.1
+restrict -6 ::1
+
+# Drift file
+driftfile /var/db/ntp.drift
+
+# Logging
+logfile /var/log/ntp.log
+
+# Specify directory for log files.
+logdir /var/log/chrony
+
+

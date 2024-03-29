@@ -1,5 +1,5 @@
 include:
   - init.dns.main
   - init.minion.main
-  - init.chrony.main
+  - init.ntp.main
   - init.security.main
