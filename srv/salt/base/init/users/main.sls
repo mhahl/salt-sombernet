@@ -5,6 +5,7 @@ mhahl:
     - home: /home/mhahl
     - groups:
       - mhahl
+      - sudo
 
   ssh_auth.present:
     - user: mhahl

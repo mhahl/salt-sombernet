@@ -3,4 +3,6 @@ include:
   - init.minion.main
   - init.ntp.main
   - init.security.main
+  - init.sudo.main
   - init.users.main
+
