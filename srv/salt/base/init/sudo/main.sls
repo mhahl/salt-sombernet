@@ -7,7 +7,7 @@ sudo:
 
 /usr/local/etc/sudoers.d/sudo:
   file.managed:
-    - source: salt://init/sudo/files/sudo.j2
+    - source: salt://init/sudo/files/sudoers.j2
     - user: root
     - group: wheel
     - mode: '0644'
