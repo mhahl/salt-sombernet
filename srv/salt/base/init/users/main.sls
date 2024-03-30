@@ -3,9 +3,9 @@ mhahl:
     - fullname: Mark Hahl
     - shell: /bin/sh
     - home: /home/mhahl
+    - remove_groups: False
     - password: $6$0C7b9byx2ArGHu6m$jlVEoXS1lj2EP8PvDV0a1FZ2ptfLG20LRNtRRWm9E0pagEWyT62k0irFFwNNeSnXCyWl82zfzPSrcwqVwJugt1
     - groups:
-      - mhahl
       - sudo
 
   ssh_auth.present:
